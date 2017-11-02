@@ -1,0 +1,11 @@
+.profile-button{
+    margin-right: 10px;
+}
+
+tr.all-data{
+	vertical-align: center;
+	text-align: center
+}
+th.table-all-data {
+  text-align: center;
+}
