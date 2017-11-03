@@ -18,35 +18,31 @@
             <span class="icon-bar"></span>
            <a class="navbar-brand" href="/">Event Controller</a>
         </div>
-        <form class="navbar-form navbar-right">
-          <a href="/" class="btn btn-primary profile-button">Профиль</a>
-          <a href="/" class="btn btn-primary">Выход</a>
-        </form>
       </div>
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <form class="form-inline" method="POST" action="/tableWithFilter">
+            <form class="form-inline">
                 <div class=" col-lg-4">
                     <label>Скрыть колонки:</label>
                     <div class="checkbox-inline">
                         <label>
-                          <input type="checkbox" name="show_chrome_info"> Google Chrome
+                          <input type="checkbox" id="show_chrome_info"> Google Chrome
                         </label>
                     </div>
                     <div class="checkbox-inline">
                         <label>
-                          <input type="checkbox" name="show_pycharm_info"> PyCharm - проекты
+                          <input type="checkbox" id="show_pycharm_info"> PyCharm - проекты
                         </label>
                     </div>
                     <div class="checkbox-inline">
                         <label>
-                          <input type="checkbox" name="show_sublime_info"> Sublime - файлы
+                          <input type="checkbox" id="show_sublime_info"> Sublime - файлы
                         </label>
                     </div>
                 </div>
                 <div class=" col-lg-2">
-                    <button type="submit" class="btn btn-primary">Обновить</button>
+                    <a type="submit" class="btn btn-primary" id="reset-button" href="#" role="button">Обновить</a>
                 </div>
                 <div class=" col-lg-6"></div>
             </form>
@@ -55,8 +51,9 @@
     {% block table_content %}{% endblock %}
     {% block table_with_filter %}{% endblock %}
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/static/less/"></script>
   <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery-3.2.1.min.js"></script>
+  <script src="/static/js/main.js"></script>
   </body>
 </html>

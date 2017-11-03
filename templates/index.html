@@ -4,10 +4,10 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th class="table-all-data">ip пользователя</th>
-          <th class="table-all-data">Вкладка GoogleChrome</th>
-          <th class="table-all-data">Проект Pycharm</th>
-          <th class="table-all-data">Файл SublimeText</th>
+          <th class="table-all-data" >ip пользователя</th>
+          <th class="table-all-data" id="th-google">Вкладка GoogleChrome</th>
+          <th class="table-all-data" id="th-pycharm">Проект Pycharm</th>
+          <th class="table-all-data" id="th-sublime">Файл SublimeText</th>
           <th class="table-all-data">Дата</th>
         </tr>
       </thead>
@@ -17,21 +17,21 @@
             <td>{{data.user_ip}}</td>
 
             {% if data.active_tab_url != None %} 
-                <td>{{data.active_tab_url}}</td>
+                <td id="active_tab_url">{{data.active_tab_url}}</td>
             {% else %} 
-                <td></td>
+                <td id="active_tab_url"></td>
             {% endif %}
 
             {% if data.pycharm_project != None %} 
-                <td>{{data.pycharm_project}}</td>
+                <td id="pycharm_project">{{data.pycharm_project}}</td>
             {% else %} 
-                <td></td>
+                <td id="pycharm_project"></td>
             {% endif %}
 
             {% if data.sublime_path != None %} 
-                <td>{{data.sublime_path}}</td>
+                <td id="sublime_path">{{data.sublime_path}}</td>
             {% else %} 
-                <td></td>
+                <td id="sublime_path"></td>
             {% endif %}
 
             <td>{{data.timestamp}}</td>
