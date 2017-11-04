@@ -17,21 +17,21 @@
             <td>{{data.user_ip}}</td>
 
             {% if data.active_tab_url != None %} 
-                <td id="active_tab_url">{{data.active_tab_url}}</td>
+                <td class="js_active_tab_url">{{data.active_tab_url}}</td>
             {% else %} 
-                <td id="active_tab_url"></td>
+                <td class="js_active_tab_url"></td>
             {% endif %}
 
             {% if data.pycharm_project != None %} 
-                <td id="pycharm_project">{{data.pycharm_project}}</td>
+                <td class="js_pycharm_project">{{data.pycharm_project}}</td>
             {% else %} 
-                <td id="pycharm_project"></td>
+                <td class="js_pycharm_project"></td>
             {% endif %}
 
             {% if data.sublime_path != None %} 
-                <td id="sublime_path">{{data.sublime_path}}</td>
+                <td class="js_sublime_path">{{data.sublime_path}}</td>
             {% else %} 
-                <td id="sublime_path"></td>
+                <td class="js_sublime_path"></td>
             {% endif %}
 
             <td>{{data.timestamp}}</td>
