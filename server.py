@@ -24,7 +24,7 @@ def index():
     return render_template('index.html', all_data = all_data)
 
 
-@app.route('/api/v1/save_info_data', methods=['GET', 'POST'])
+@app.route('/api/v1/save_info_data', methods=['POST'])
 def save_info_data():
     j_data = json.loads(request.json)
     id_list = []
